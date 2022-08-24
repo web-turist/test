@@ -1,0 +1,17 @@
+1)Теория
+Выведет: Bad: 10, Bad: 12, Good: 15, Good: 21
+Согласно условию если больше 13, то good, если меньше, то bad.
+
+
+Вариант 1
+for (let i = 0; i < arr.length; i++) {
+    setTimeout(function() {
+        console.log(arr[i] % 2 == 0 ? `Good: ${arr[i]}` : `Bad: ${arr[i]}`);
+    }, 3000);
+} 
+
+
+Вариант 2
+arr.forEach((item) => {
+    console.log(item % 2 == 0 ? `Bad: ${item}` : `Good: ${item}`);
+});

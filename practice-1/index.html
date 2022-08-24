@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/media.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="modal">
+            <div class="modal__title">Стать партнёром проекта</div>
+            <div class="modal__wrapper">
+                <label class="modal__label" for="company">Название организации</label>
+                <input class="modal__input modal__input_short" required type="text" name="company" placeholder="АВЦ">
+                <label class="modal__label" for="phone">Телефон</label>
+                <input class="modal__input modal__input_short" required type="tel" name="phone" placeholder="+7 933 848-34-33">
+                <label class="modal__label" for="mail">E-mail</label>
+                <input class="modal__input modal__input_short" required type="email" name="mail" placeholder="avc@gmail.com">
+                <label class="modal__label" for="select">Направление</label>
+                <select class="modal__input" required name="select" id="">
+                    <option value="first" selected>Экология</option>
+                    <option value="second">Вариант 2</option>
+                    <option value="third">Вариант 3</option>
+                </select>
+                <input class="modal__input modal__input_center modal__input_site" type="text" name="sait" placeholder="avc.ru">
+                <input class="modal__input modal__input_center modal__input_vk" type="url" name="vk" placeholder="vk.com/shans">
+                <input class="modal__input modal__input_center modal__input_odnoklassniki" type="text" name="odnoklassniki" placeholder="ok.com/shans">
+                <input class="modal__input modal__input_center modal__input_facebook" type="text" name="facebook" placeholder="facebook.com/shans">
+                <input class="modal__input modal__input_center modal__input_instagram" type="text" name="instagram" placeholder="instagram.com/shans">
+                <input class="modal__input modal__input_center modal__input_youtoub" type="text" name="youtoub" placeholder="youtube.com/shans">
+                <label class="modal__label_withoutstar" for="name">Руководитель</label>
+                <input class="modal__input" type="text" name="name" placeholder="Александров Иван Васильевич">
+                <div class="modal__logo">
+                    <div class="modal__logo-title">Логотип (jpeg, png)</div>
+                    <button class="modal__logo-close">
+                        <img src="/img/avatar_close.svg" alt="close">
+                    </button>
+                    <div class="modal__logo-avatar">
+                        <div class="modal__logo-icon">
+                            <img src="/img/modal_icon.svg" alt="download">
+                        </div>
+                        <label class="modal__logo-text">
+                            Выберите<br>файл<input type="file" style="display: none;"  name="download">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__btns">
+                <button class="modal__btn modal__btn_red">Стать партнёром проекта</button>
+                <button class="modal__btn modal__btn_white">Отменить</button>
+            </div>
+        </form>
+    </div>
+        <button class="open__modal">Открыть окно</button>
+    <script src="/script.js"></script>
+</body>
+</html>

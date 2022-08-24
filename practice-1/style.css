@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.42);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.modal {
+    width: 754px;
+    /* height: 1248px; */
+    margin: 101px 0 50px 0;
+    padding: 53px 98px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+
+}
+
+.modal__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 12px;
+}
+
+.modal__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal__input {
+    border: 1px solid #D6DADE;
+    border-radius: 2px;
+    width: 100%;
+    height: 56px;
+    margin-bottom: 32px;
+    padding: 22px 16px 8px 16px;
+    position: relative;
+}
+
+.modal__input_center {
+    padding: 16px;
+}
+
+.modal__input_site {
+    background-image: url('/img/icon_input-1.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px bottom 50%;
+}
+
+.modal__input_vk {
+    background-image: url('/img/icon_input-2.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px bottom 50%;
+}
+
+.modal__input_odnoklassniki {
+    background-image: url('/img/icon_input-3.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px bottom 50%;
+}
+
+.modal__input_facebook {
+    background-image: url('/img/icon_input-4.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px bottom 50%;
+}
+
+.modal__input_instagram {
+    background-image: url('/img/icon_input-5.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px bottom 50%;
+}
+
+.modal__input_youtoub {
+    background-image: url('/img/icon_input-6.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px bottom 50%;
+    margin-bottom: 14px;
+}
+
+.modal__label, .modal__label_withoutstar {
+    width: 150px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    transform: translate(16px, 23px);
+    color: #6A6E72;
+    z-index: 10;
+}
+
+.modal__wrapper > select {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0C1014;
+}
+
+.modal__label::before {
+    content: '✱ ';
+    color: red;
+}
+
+.modal__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0C1014;
+   }
+
+.modal__input_short {
+    width: 65%;
+    margin-bottom: 14px;
+}
+
+.modal__logo {
+    width: 175px;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.modal__logo-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 7px;
+}
+
+.modal__logo-title::before {
+    content: '✱ ';
+    color: red;
+}
+
+.modal__logo-close {
+    width: 36px;
+    height: 36px;
+    background-color: #ffff;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 6px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.modal__logo-avatar {
+    width: 100%;
+    height: 163px;
+    background-image: url('/img/modal_logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__logo-icon {
+    margin-bottom: 7px;
+}
+
+.modal__logo-text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal__btns {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__btn {
+    width: 100%;
+    cursor: pointer;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.modal__btn_red {
+    background: #E5266E;
+    border: 1px solid #E5266E;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.modal__btn_white {
+    background: #FFFF;
+    border: 1px solid #FFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0848C0;
+}
+
+.open__modal {
+    background-color: green;
+    border: 1px solid green;
+    width: 150px;
+    height: 45px;
+}
